@@ -6,7 +6,7 @@ import Menu from "./Menu";
 import InfoTooltip from "./InfoTooltip";
 function Main() {
   const [lat, setlat] = React.useState(0);
-  const [long, setlong] = React.useState(0);
+  const [lon, setlon] = React.useState(0);
 
   const [parametres, setParametres] = React.useState({});
 
@@ -28,14 +28,15 @@ function Main() {
   ];
 
   React.useEffect(()=> {
-    api.getInfo(lat, long)
+    api.getInfo(lat, lon)
     .then((res) => {
       handleParametres(res);
+      console.log(res);
     })
     .catch(err => {
       console.log(err);
     });
-  },[lat, long]);
+  },[lat, lon]);
   
   function closePopup() {                      // закрытие попапа
     setInfoTooltipOpened(false);
@@ -47,7 +48,7 @@ function Main() {
 
   function handleMapClick(X, Y) {
     setlat(X);
-    setlong(Y);
+    setlon(Y);
   }
 
   function handleParametres(parametres) {
