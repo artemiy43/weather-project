@@ -1,0 +1,20 @@
+.email-conteiner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+/* .email-text {
+    
+    color: yellow;
+} */
+
+.email-input {
+    width: 90%;
+}
+
+.email-btn {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

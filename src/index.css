@@ -1,0 +1,33 @@
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./blocks/body/body.css);
+
+@import url(./blocks/page/page.css);
+@import url(./blocks/page/__container/page__container.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__text/header__text.css);
+
+@import url(./blocks/map/__container/map__container.css);
+@import url(./blocks/map/__container/webmap.css);
+@import url(./blocks/content/content.css);
+
+@import url(./blocks/menu/menu.css);
+@import url(./blocks/menu/__grid-container/menu__grid-container.css);
+@import url(./blocks/menu/__span-coordinates/menu__span-coordinates.css);
+@import url(./blocks/menu/__span-origin/menu__span-origin.css);
+@import url(./blocks/menu/__title/meni__title.css);
+
+@import url(./blocks/mainForm/mainForm.css);
+
+@import url(./blocks/select/select.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__paragraph/footer__paragraph.css);
+
+
+@import url(./blocks/email.css);
+@import url(./blocks/number.css);
+
+@import url(./blocks/InfoTooltip/InfoTooltip.css);
